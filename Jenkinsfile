@@ -31,7 +31,11 @@ pipeline {
         
         stage('Testing') {
             steps {
-                sh 'mvn test | true'
+                script {
+                    withCredentials([string(credentialsId: 'EMAIL', variable: 'EMAIL'), string(credentialsId: 'PASSWORD', variable: 'PASSWORD')]) {
+                        sh 'mvn test'
+                    }
+                }
             }
         }
 
