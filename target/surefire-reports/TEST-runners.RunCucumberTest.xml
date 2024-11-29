@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.RunCucumberTest" time="854.812" tests="50" errors="2" skipped="0" failures="5">
+  <properties>
+    <property name="cucumber.publish.quiet" value="true"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Course\QA\deep-work-call-plan\target\test-classes;D:\Course\QA\deep-work-call-plan\target\classes;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-java\7.11.1\cucumber-java-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-core\7.11.1\cucumber-core-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-gherkin\7.11.1\cucumber-gherkin-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.1\cucumber-gherkin-messages-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\datatable\7.11.1\datatable-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-plugin\7.11.1\cucumber-plugin-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\docstring\7.11.1\docstring-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-junit\7.11.1\cucumber-junit-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-picocontainer\7.11.1\cucumber-picocontainer-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-17.0.11.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\mohammad.ferdiyan-iu\AppData\Local\Temp\surefire2702456957336977282\surefirebooter-20241128164941407_3.jar C:\Users\mohammad.ferdiyan-iu\AppData\Local\Temp\surefire2702456957336977282 2024-11-28T16-49-41_231-jvmRun1 surefire-20241128164941407_1tmp surefire_0-20241128164941407_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Course\QA\deep-work-call-plan\target\test-classes;D:\Course\QA\deep-work-call-plan\target\classes;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-java\7.11.1\cucumber-java-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-core\7.11.1\cucumber-core-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-gherkin\7.11.1\cucumber-gherkin-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.1\cucumber-gherkin-messages-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\datatable\7.11.1\datatable-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-plugin\7.11.1\cucumber-plugin-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\docstring\7.11.1\docstring-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-junit\7.11.1\cucumber-junit-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\cucumber-picocontainer\7.11.1\cucumber-picocontainer-7.11.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\mohammad.ferdiyan-iu\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="D:\Course\QA\deep-work-call-plan\target/allure-results"/>
+    <property name="user.home" value="C:\Users\mohammad.ferdiyan-iu"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Microsoft\jdk-17.0.11.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Course\QA\deep-work-call-plan"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\mohammad.ferdiyan-iu\AppData\Local\Temp\surefire2702456957336977282\surefirebooter-20241128164941407_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+9-LTS"/>
+    <property name="user.name" value="mohammad.ferdiyan-iu"/>
+    <property name="path.separator" value=";"/>
+    <property name="otel.metrics.exporter" value="none"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="otel.traces.exporter" value="none"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-9388408"/>
+    <property name="localRepository" value="C:\Users\mohammad.ferdiyan-iu\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="otel.logs.exporter" value="none"/>
+    <property name="java.io.tmpdir" value="C:\Users\MOHAMM~1.FER\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="D:\Course\QA\deep-work-call-plan"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Microsoft\jdk-17.0.11.9-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft\jdk-17.0.11.9-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\SafeCom\SafeComPrintClient;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Program Files (x86)\Windows Live\Shared;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\m.ferdiyanzah_dxg\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\Software\sonar-scanner\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;c:\Users\m.ferdiyanzah_dxg\AppData\Local\Programs\cursor\resources\app\bin;c:\Users\mohammad.ferdiyan-iu\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\mohammad.ferdiyan-iu\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\Others\apache-maven-3.9.9\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\mohammad.ferdiyan-iu\scoop\shims;C:\Users\mohammad.ferdiyan-iu\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\mohammad.ferdiyan-iu\AppData\Local\Programs\Python\Python313\;C:\Users\mohammad.ferdiyan-iu\AppData\Local\Microsoft\WindowsApps;C:\Users\mohammad.ferdiyan-iu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mohammad.ferdiyan-iu\AppData\Local\Programs\oh-my-posh\bin;D:\Software\sdk\platform-tools;C:\Users\mohammad.ferdiyan-iu\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\Others\apache-maven-3.9.9\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="17.0.11+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="I can see the error message when search without the month" classname="Call Overview" time="10.321">
+    <system-out><![CDATA[
+@CallOverview
+Scenario: I can see the error message when search without the month # src/test/resources/features/call_overview/CallOverview.feature:17
+  Given I am on the ifocus page                                     # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                  # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                      # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                      # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                   # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                           # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                             # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                          # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                 # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message           # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call overview page                              # steps.call_overview.CallOverviewSteps.iAmOnTheCallOverviewPage()
+  When I click the search button                                    # steps.call_overview.CallOverviewSteps.iClickTheSearchButton()
+  Then I should see the input error message                         # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheErrorMessage()
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Nov 28, 2024 4:49:42 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+]]></system-err>
+  </testcase>
+  <testcase name="I can see the search result" classname="Call Overview" time="14.707">
+    <system-out><![CDATA[
+@CallOverview
+Scenario: I can see the search result                     # src/test/resources/features/call_overview/CallOverview.feature:22
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call overview page                    # steps.call_overview.CallOverviewSteps.iAmOnTheCallOverviewPage()
+  When I input the month "2" of "2024" year               # steps.call_overview.CallOverviewSteps.iInputTheMonthOfYear(java.lang.String,java.lang.String)
+  And I click the search button                           # steps.call_overview.CallOverviewSteps.iClickTheSearchButton()
+  Then I should see the result of overview                # steps.call_overview.CallOverviewSteps.iShouldSeeTheResultOfOverview()
+]]></system-out>
+  </testcase>
+  <testcase name="I can switch to weekly tab" classname="Call Overview" time="8.135">
+    <system-out><![CDATA[
+@CallOverview
+Scenario: I can switch to weekly tab                      # src/test/resources/features/call_overview/CallOverview.feature:28
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call overview page                    # steps.call_overview.CallOverviewSteps.iAmOnTheCallOverviewPage()
+  When I switch to weekly tab                             # steps.call_overview.CallOverviewSteps.iSwitchToWeeklyTab()
+  Then I should see the weekly tab                        # steps.call_overview.CallOverviewSteps.iShouldSeeTheWeeklyTab()
+]]></system-out>
+  </testcase>
+  <testcase name="I can use sort by name ascending" classname="Call Overview" time="22.816">
+    <system-out><![CDATA[
+@CallOverview
+Scenario: I can use sort by name ascending                  # src/test/resources/features/call_overview/CallOverview.feature:33
+  Given I am on the ifocus page                             # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                          # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                              # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                              # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                           # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                        # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                     # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                  # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button         # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call overview page                      # steps.call_overview.CallOverviewSteps.iAmOnTheCallOverviewPage()
+  When I input the month "2" of "2024" year                 # steps.call_overview.CallOverviewSteps.iInputTheMonthOfYear(java.lang.String,java.lang.String)
+  And I click the search button                             # steps.call_overview.CallOverviewSteps.iClickTheSearchButton()
+  Then I should see the result of overview                  # steps.call_overview.CallOverviewSteps.iShouldSeeTheResultOfOverview()
+  When I click the sort by "Person Name" button "ascending" # steps.call_overview.CallOverviewSteps.iClickTheSortByNameButton(java.lang.String,java.lang.String)
+  Then I can see the sorted "Person Name" by "ascending"    # steps.call_overview.CallOverviewSteps.iCanSeeTheSortedDoctorNames(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can use sort by name descending" classname="Call Overview" time="18.335">
+    <system-out><![CDATA[
+@CallOverview
+Scenario: I can use sort by name descending                  # src/test/resources/features/call_overview/CallOverview.feature:41
+  Given I am on the ifocus page                              # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                           # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                               # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                               # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                            # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                         # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                    # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                      # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                   # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button          # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message    # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call overview page                       # steps.call_overview.CallOverviewSteps.iAmOnTheCallOverviewPage()
+  When I input the month "2" of "2024" year                  # steps.call_overview.CallOverviewSteps.iInputTheMonthOfYear(java.lang.String,java.lang.String)
+  And I click the search button                              # steps.call_overview.CallOverviewSteps.iClickTheSearchButton()
+  Then I should see the result of overview                   # steps.call_overview.CallOverviewSteps.iShouldSeeTheResultOfOverview()
+  When I click the sort by "Person Name" button "descending" # steps.call_overview.CallOverviewSteps.iClickTheSortByNameButton(java.lang.String,java.lang.String)
+  Then I can see the sorted "Person Name" by "descending"    # steps.call_overview.CallOverviewSteps.iCanSeeTheSortedDoctorNames(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can filter the doctor by name" classname="Call Overview" time="20.795">
+    <system-out><![CDATA[
+@CallOverview
+Scenario: I can filter the doctor by name                       # src/test/resources/features/call_overview/CallOverview.feature:49
+  Given I am on the ifocus page                                 # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                              # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                  # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                  # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                               # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                            # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                       # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                         # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                      # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button             # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message       # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call overview page                          # steps.call_overview.CallOverviewSteps.iAmOnTheCallOverviewPage()
+  When I input the month "2" of "2024" year                     # steps.call_overview.CallOverviewSteps.iInputTheMonthOfYear(java.lang.String,java.lang.String)
+  And I click the search button                                 # steps.call_overview.CallOverviewSteps.iClickTheSearchButton()
+  Then I should see the result of overview                      # steps.call_overview.CallOverviewSteps.iShouldSeeTheResultOfOverview()
+  When I can filter the doctor by "Person Name" with value "AD" # steps.call_overview.CallOverviewSteps.iCanFilterTheDoctorBy(java.lang.String,java.lang.String)
+  Then I can see the filtered doctor names "AD"                 # steps.call_overview.CallOverviewSteps.iCanSeeTheFilteredDoctorNames(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can reset the filter of doctor name" classname="Call Overview" time="13.266">
+    <system-out><![CDATA[
+@CallOverview
+Scenario: I can reset the filter of doctor name             # src/test/resources/features/call_overview/CallOverview.feature:57
+  Given I am on the ifocus page                             # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                          # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                              # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                              # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                           # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                        # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                     # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                  # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button         # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call overview page                      # steps.call_overview.CallOverviewSteps.iAmOnTheCallOverviewPage()
+  When I input the month "2" of "2024" year                 # steps.call_overview.CallOverviewSteps.iInputTheMonthOfYear(java.lang.String,java.lang.String)
+  And I click the search button                             # steps.call_overview.CallOverviewSteps.iClickTheSearchButton()
+  Then I should see the result of overview                  # steps.call_overview.CallOverviewSteps.iShouldSeeTheResultOfOverview()
+  When I reset the filter by "Person Name"                  # steps.call_overview.CallOverviewSteps.iResetTheFilterBy(java.lang.String)
+  Then I can see the input filter of "Person Name" is empty # steps.call_overview.CallOverviewSteps.iCanSeeTheInputFilterOfIsEmpty(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can use sort by class descending" classname="Call Overview" time="18.581">
+    <system-out><![CDATA[
+@CallOverview
+Scenario: I can use sort by class descending              # src/test/resources/features/call_overview/CallOverview.feature:65
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call overview page                    # steps.call_overview.CallOverviewSteps.iAmOnTheCallOverviewPage()
+  When I input the month "2" of "2024" year               # steps.call_overview.CallOverviewSteps.iInputTheMonthOfYear(java.lang.String,java.lang.String)
+  And I click the search button                           # steps.call_overview.CallOverviewSteps.iClickTheSearchButton()
+  Then I should see the result of overview                # steps.call_overview.CallOverviewSteps.iShouldSeeTheResultOfOverview()
+  When I click the sort by "Class" button "descending"    # steps.call_overview.CallOverviewSteps.iClickTheSortByNameButton(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the call recomendation page" classname="Call Recommendation" time="8.213">
+    <system-out><![CDATA[
+@CallRecomendation
+Scenario: I can see the call recomendation page           # src/test/resources/features/call_recomendation/CallRecomendation.feature:16
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call recomendation page               # steps.call_recomendation.CallRecomendationSteps.iAmOnTheCallRecomendationPage()
+  Then I should see the call recomendation page           # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheCallRecomendationPage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can simulate the call recomendation" classname="Call Recommendation" time="48.878">
+    <system-out><![CDATA[
+@CallRecomendation
+Scenario: I can simulate the call recomendation           # src/test/resources/features/call_recomendation/CallRecomendation.feature:20
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call recomendation page               # steps.call_recomendation.CallRecomendationSteps.iAmOnTheCallRecomendationPage()
+  Then I should see the call recomendation page           # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheCallRecomendationPage()
+  When I input the "45" week of "2024" year               # steps.call_recomendation.CallRecomendationSteps.iInputTheWeek(java.lang.String,java.lang.String)
+  And I click the simulate call button                    # steps.call_recomendation.CallRecomendationSteps.iClickTheSimulateCallButton()
+Found 40 cards in DOM (might not be visible)
+  Then I should see the docter card                       # steps.call_recomendation.CallRecomendationSteps.iShouldSeeDocterCard()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the error message when simulate without the date" classname="Call Recommendation" time="16.218">
+    <system-out><![CDATA[
+@CallRecomendation
+Scenario: I can see the error message when simulate without the date # src/test/resources/features/call_recomendation/CallRecomendation.feature:27
+  Given I am on the ifocus page                                      # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                   # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                       # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                       # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                    # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                 # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                            # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                              # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                           # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                  # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message            # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call recomendation page                          # steps.call_recomendation.CallRecomendationSteps.iAmOnTheCallRecomendationPage()
+  Then I should see the call recomendation page                      # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheCallRecomendationPage()
+  When I click the simulate call button                              # steps.call_recomendation.CallRecomendationSteps.iClickTheSimulateCallButton()
+  Then I should see the input error message                          # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheErrorMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can reset the recomendation after simulate" classname="Call Recommendation" time="80.31">
+    <system-out><![CDATA[
+@CallRecomendation
+Scenario: I can reset the recomendation after simulate    # src/test/resources/features/call_recomendation/CallRecomendation.feature:33
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call recomendation page               # steps.call_recomendation.CallRecomendationSteps.iAmOnTheCallRecomendationPage()
+  Then I should see the call recomendation page           # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheCallRecomendationPage()
+  When I input the "45" week of "2024" year               # steps.call_recomendation.CallRecomendationSteps.iInputTheWeek(java.lang.String,java.lang.String)
+  And I click the simulate call button                    # steps.call_recomendation.CallRecomendationSteps.iClickTheSimulateCallButton()
+Found 40 cards in DOM (might not be visible)
+  Then I should see the docter card                       # steps.call_recomendation.CallRecomendationSteps.iShouldSeeDocterCard()
+  When I click the reset button                           # steps.call_recomendation.CallRecomendationSteps.iClickResetButton()
+  Then I should see the empty datepicker and doctor card  # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheEmptyDatepickerAndDoctorCard()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the error message when simulate with invalid date" classname="Call Recommendation" time="8.959">
+    <system-out><![CDATA[
+@CallRecomendation
+Scenario: I can see the error message when simulate with invalid date # src/test/resources/features/call_recomendation/CallRecomendation.feature:42
+  Given I am on the ifocus page                                       # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                    # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                        # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                        # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                     # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                  # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                             # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                            # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                   # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message             # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call recomendation page                           # steps.call_recomendation.CallRecomendationSteps.iAmOnTheCallRecomendationPage()
+  Then I should see the call recomendation page                       # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheCallRecomendationPage()
+  When I input invalid date                                           # steps.call_recomendation.CallRecomendationSteps.iInputInvalidDate()
+  And I click the simulate call button                                # steps.call_recomendation.CallRecomendationSteps.iClickTheSimulateCallButton()
+  Then I should see the input error message                           # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheErrorMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see warning when simulate old date" classname="Call Recommendation" time="22.158">
+    <system-out><![CDATA[
+@CallRecomendation
+Scenario: I can see warning when simulate old date        # src/test/resources/features/call_recomendation/CallRecomendation.feature:49
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call recomendation page               # steps.call_recomendation.CallRecomendationSteps.iAmOnTheCallRecomendationPage()
+  Then I should see the call recomendation page           # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheCallRecomendationPage()
+  When I input the "45" week of "2020" year               # steps.call_recomendation.CallRecomendationSteps.iInputTheWeek(java.lang.String,java.lang.String)
+  And I click the simulate call button                    # steps.call_recomendation.CallRecomendationSteps.iClickTheSimulateCallButton()
+  Then I should see the warning message                   # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheWarningMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the tooltip of the doctor card" classname="Call Recommendation" time="47.599">
+    <system-out><![CDATA[
+@CallRecomendation
+Scenario: I can see the tooltip of the doctor card        # src/test/resources/features/call_recomendation/CallRecomendation.feature:56
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the call recomendation page               # steps.call_recomendation.CallRecomendationSteps.iAmOnTheCallRecomendationPage()
+  Then I should see the call recomendation page           # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheCallRecomendationPage()
+  When I input the "45" week of "2024" year               # steps.call_recomendation.CallRecomendationSteps.iInputTheWeek(java.lang.String,java.lang.String)
+  And I click the simulate call button                    # steps.call_recomendation.CallRecomendationSteps.iClickTheSimulateCallButton()
+Found 40 cards in DOM (might not be visible)
+  Then I should see the docter card                       # steps.call_recomendation.CallRecomendationSteps.iShouldSeeDocterCard()
+  When I click the doctor card                            # steps.call_recomendation.CallRecomendationSteps.iClickTheDoctorCard()
+  Then I should see the tooltip of the doctor card        # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheTooltipOfTheDoctorCard()
+]]></system-out>
+  </testcase>
+  <testcase name="I can visit the input best time page" classname="Input Best Time" time="9.872">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can visit the input best time page            # src/test/resources/features/input-best-time/InputBestTime.feature:17
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+84
+  Then I should see the input best time page              # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheInputBestTimePage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can use the day filter correctly" classname="Input Best Time" time="10.056">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can use the day filter correctly              # src/test/resources/features/input-best-time/InputBestTime.feature:21
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+Total doctors on selected day: 11
+  When I click the "monday" day                           # steps.input_best_time.InputBestTimeSteps.iClickTheDay(java.lang.String)
+Title value: 11 and total doctors on selected day: 11
+  Then I should see the total doctors on the "monday" day # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheTotalDoctorsOnTheDay(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can select the doctor from the list" classname="Input Best Time" time="8.946">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can select the doctor from the list           # src/test/resources/features/input-best-time/InputBestTime.feature:26
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                  # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                   # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+]]></system-out>
+  </testcase>
+  <testcase name="I can switch tab between best time and leave" classname="Input Best Time" time="11.442">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can switch tab between best time and leave    # src/test/resources/features/input-best-time/InputBestTime.feature:31
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                  # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                   # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+  When I switch the tab to leave                          # steps.input_best_time.InputBestTimeSteps.iSwitchTheTabToLeave()
+  Then I should see the leave tab                         # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheLeaveTab()
+  When I switch the tab to best time                      # steps.input_best_time.InputBestTimeSteps.iSwitchTheTabToBestTime()
+  Then I should see the best time tab                     # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheBestTimeTab()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the error message when submitting visit time of multiple location doctor with same time" classname="Input Best Time" time="10.071">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can see the error message when submitting visit time of multiple location doctor with same time # src/test/resources/features/input-best-time/InputBestTime.feature:40
+  Given I am on the ifocus page                                                                             # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                                          # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                                              # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                                              # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                                           # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                                                        # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                                                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                                                     # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                                                                  # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                                                         # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                                                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                                                                    # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                                                                    # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                                                                     # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+  When I submit the visit time                                                                              # steps.input_best_time.InputBestTimeSteps.iSubmitTheVisitTime()
+  Then I should see the error message when submitting visit time of multiple location doctor with same time # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheErrorMessageWhenSubmittingVisitTimeOfMultipleLocationDoctorWithSameTime()
+]]></system-out>
+  </testcase>
+  <testcase name="Toggle between Day and Night shifts" classname="Input Best Time" time="10.417">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: Toggle between Day and Night shifts                            # src/test/resources/features/input-best-time/InputBestTime.feature:47
+  Given I am on the ifocus page                                          # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                       # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                           # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                           # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                        # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                     # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                  # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                               # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                      # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                                 # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                                 # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                                  # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+Is switch active: false
+  When I select "Day" shift for "Monday" at "42 BALARAJA, RSUD"          # steps.input_best_time.InputBestTimeSteps.iSelectShiftForDayAtLocation(java.lang.String,java.lang.String,java.lang.String)
+Current state: true and isSwitchActive: false
+  Then "Day" shift for "Monday" at "42 BALARAJA, RSUD" should be changed # steps.input_best_time.InputBestTimeSteps.shiftForDayAtLocationShouldBeChanged(java.lang.String,java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Submit without selecting any shifts" classname="Input Best Time" time="11.844">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: Submit without selecting any shifts                                     # src/test/resources/features/input-best-time/InputBestTime.feature:54
+  Given I am on the ifocus page                                                   # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                    # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                    # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                 # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                              # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                         # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                           # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                                        # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                               # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                         # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                                          # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                                          # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                                           # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+  When I switch all shift to off                                                  # steps.input_best_time.InputBestTimeSteps.iSwitchAllShiftToOff()
+  And I submit the visit time                                                     # steps.input_best_time.InputBestTimeSteps.iSubmitTheVisitTime()
+  Then I should see confirmation modal                                            # steps.input_best_time.InputBestTimeSteps.iShouldSeeConfirmationModal()
+  When I click the Confirm button                                                 # steps.input_best_time.InputBestTimeSteps.iClickTheConfirmButton()
+  Then I can see success modal of "Doctor's best time visit successfully updated" # steps.input_best_time.InputBestTimeSteps.iCanSeeSuccessModal(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Switch between tab day and night" classname="Input Best Time" time="11.946">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: Switch between tab day and night                                        # src/test/resources/features/input-best-time/InputBestTime.feature:64
+  Given I am on the ifocus page                                                   # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                    # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                    # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                 # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                              # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                         # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                           # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                                        # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                               # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                         # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                                          # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                                          # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                                           # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+  When I switch all shift to off                                                  # steps.input_best_time.InputBestTimeSteps.iSwitchAllShiftToOff()
+  And I submit the visit time                                                     # steps.input_best_time.InputBestTimeSteps.iSubmitTheVisitTime()
+  Then I should see confirmation modal                                            # steps.input_best_time.InputBestTimeSteps.iShouldSeeConfirmationModal()
+  When I click the Confirm button                                                 # steps.input_best_time.InputBestTimeSteps.iClickTheConfirmButton()
+  Then I can see success modal of "Doctor's best time visit successfully updated" # steps.input_best_time.InputBestTimeSteps.iCanSeeSuccessModal(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can&apos;t input the leave date that already used" classname="Input Best Time" time="12.607">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can't input the leave date that already used                                                                           # src/test/resources/features/input-best-time/InputBestTime.feature:74
+  Given I am on the ifocus page                                                                                                    # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                                                                 # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                                                                     # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                                                                     # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                                                                  # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                                                                               # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                                                                          # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                                                                            # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                                                                                         # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                                                                                # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                                                                          # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                                                                                           # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                                                                                           # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                                                                                            # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+  When I switch the tab to leave                                                                                                   # steps.input_best_time.InputBestTimeSteps.iSwitchTheTabToLeave()
+  Then I should see the leave tab                                                                                                  # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheLeaveTab()
+  When I input the leave date of "2024-11-21" to "2024-11-29" and "enter"                                                          # steps.input_best_time.InputBestTimeSteps.iInputTheStartOfLeaveDate(java.lang.String,java.lang.String,java.lang.String)
+  Then I should see confirmation modal                                                                                             # steps.input_best_time.InputBestTimeSteps.iShouldSeeConfirmationModal()
+  When I click the Confirm button                                                                                                  # steps.input_best_time.InputBestTimeSteps.iClickTheConfirmButton()
+Error message: The leave period overlaps with an existing leave record. Please choose a different date range.
+  Then I can see error message of "The leave period overlaps with an existing leave record. Please choose a different date range." # steps.input_best_time.InputBestTimeSteps.iCanSeeErrorMessage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the history of doctor&apos;s leave" classname="Input Best Time" time="11.342">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can see the history of doctor's leave         # src/test/resources/features/input-best-time/InputBestTime.feature:85
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                  # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                   # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+  When I switch the tab to leave                          # steps.input_best_time.InputBestTimeSteps.iSwitchTheTabToLeave()
+  Then I should see the leave tab                         # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheLeaveTab()
+  When I click the history button                         # steps.call_overview.CallOverviewSteps.iClickTheHistoryButton()
+  Then I can see the history of doctor leave              # steps.call_overview.CallOverviewSteps.iCanSeeTheHistoryOfDoctorLeave()
+]]></system-out>
+  </testcase>
+  <testcase name="I can close the history of doctor leave" classname="Input Best Time" time="11.871">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can close the history of doctor leave         # src/test/resources/features/input-best-time/InputBestTime.feature:94
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                  # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                   # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+  When I switch the tab to leave                          # steps.input_best_time.InputBestTimeSteps.iSwitchTheTabToLeave()
+  Then I should see the leave tab                         # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheLeaveTab()
+  When I click the history button                         # steps.call_overview.CallOverviewSteps.iClickTheHistoryButton()
+  Then I can see the history of doctor leave              # steps.call_overview.CallOverviewSteps.iCanSeeTheHistoryOfDoctorLeave()
+  When I click the close of history of doctor leave       # steps.input_best_time.InputBestTimeSteps.iClickTheCloseOfHistoryOfDoctorLeave()
+  Then I can not see the history of doctor leave          # steps.input_best_time.InputBestTimeSteps.iCanNotSeeTheHistoryOfDoctorLeave()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the error message when input invalid date on leave tab" classname="Input Best Time" time="11.416">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can see the error message when input invalid date on leave tab # src/test/resources/features/input-best-time/InputBestTime.feature:105
+  Given I am on the ifocus page                                            # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                         # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                             # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                             # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                          # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                       # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                  # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                    # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                                 # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                        # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                  # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                                   # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                                   # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                                    # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+  When I switch the tab to leave                                           # steps.input_best_time.InputBestTimeSteps.iSwitchTheTabToLeave()
+  Then I should see the leave tab                                          # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheLeaveTab()
+  When I input invalid date on leave tab                                   # steps.input_best_time.InputBestTimeSteps.iInputInvalidDateOnLeaveTab()
+  Then I should see the input error message                                # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheErrorMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can submit the leave with a long note" classname="Input Best Time" time="23.337">
+    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.input_best_time.InputBestTimeSteps.iCanSeeSuccessModal(InputBestTimeSteps.java:214)
+	at ✽.I can see success modal of "Doctor's leave successfully created"(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/input-best-time/InputBestTime.feature:124)
+]]></failure>
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can submit the leave with a long note                        # src/test/resources/features/input-best-time/InputBestTime.feature:114
+  Given I am on the ifocus page                                          # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                       # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                           # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                           # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                        # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                     # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                  # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                               # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                      # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                                 # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I select the doctor from the list                                 # steps.input_best_time.InputBestTimeSteps.iSelectTheDoctorFromTheList()
+  Then I should see the selected doctor                                  # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheSelectedDoctor()
+  When I switch the tab to leave                                         # steps.input_best_time.InputBestTimeSteps.iSwitchTheTabToLeave()
+  Then I should see the leave tab                                        # steps.input_best_time.InputBestTimeSteps.iShouldSeeTheLeaveTab()
+  When I input a long leave note                                         # steps.input_best_time.InputBestTimeSteps.iInputALongLeaveNote()
+  And I input the leave date of "2024-11-21" to "2024-11-29" and "enter" # steps.input_best_time.InputBestTimeSteps.iInputTheStartOfLeaveDate(java.lang.String,java.lang.String,java.lang.String)
+  Then I should see confirmation modal                                   # steps.input_best_time.InputBestTimeSteps.iShouldSeeConfirmationModal()
+  When I click the Confirm button                                        # steps.input_best_time.InputBestTimeSteps.iClickTheConfirmButton()
+  Then I can see success modal of "Doctor's leave successfully created"  # steps.input_best_time.InputBestTimeSteps.iCanSeeSuccessModal(java.lang.String)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.input_best_time.InputBestTimeSteps.iCanSeeSuccessModal(InputBestTimeSteps.java:214)
+	at âœ½.I can see success modal of "Doctor's leave successfully created"(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/input-best-time/InputBestTime.feature:124)
+
+]]></system-out>
+  </testcase>
+  <testcase name="I can use the filter upcountry correctly" classname="Input Best Time" time="11.558">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can use the filter upcountry correctly        # src/test/resources/features/input-best-time/InputBestTime.feature:126
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I click the "upcountry" filter button              # steps.input_best_time.InputBestTimeSteps.iClickTheFilterButton(java.lang.String)
+  Then I can see the "upcountry" filter active            # steps.input_best_time.InputBestTimeSteps.iCanSeeTheFilterActive(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can use the filter unscheduled correctly" classname="Input Best Time" time="12.605">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can use the filter unscheduled correctly      # src/test/resources/features/input-best-time/InputBestTime.feature:131
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I click the "unscheduled" filter button            # steps.input_best_time.InputBestTimeSteps.iClickTheFilterButton(java.lang.String)
+  Then I can see the "unscheduled" filter active          # steps.input_best_time.InputBestTimeSteps.iCanSeeTheFilterActive(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can use the filter visitable correctly" classname="Input Best Time" time="12.446">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can use the filter visitable correctly        # src/test/resources/features/input-best-time/InputBestTime.feature:136
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I click the "visitable" filter button              # steps.input_best_time.InputBestTimeSteps.iClickTheFilterButton(java.lang.String)
+  Then I can see the "visitable" filter active            # steps.input_best_time.InputBestTimeSteps.iCanSeeTheFilterActive(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can search the doctor by name" classname="Input Best Time" time="11.755">
+    <system-out><![CDATA[
+@InputBestTime
+Scenario: I can search the doctor by name                 # src/test/resources/features/input-best-time/InputBestTime.feature:141
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "TGRVIC0103"                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the input best time page                  # steps.input_best_time.InputBestTimeSteps.iAmOnTheInputBestTimePage()
+  When I input the doctor name "ABD"                      # steps.input_best_time.InputBestTimeSteps.iInputTheDoctorName(java.lang.String)
+  Then I can see the doctor "ABD" in the list             # steps.input_best_time.InputBestTimeSteps.iCanSeeTheDoctorInTheList(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the approval product recomendation page" classname="Approval Product Recomendation" time="8.7">
+    <system-out><![CDATA[
+@ApprovalProductRecomendation
+Scenario: I can see the approval product recomendation page # src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:17
+  Given I am on the ifocus page                             # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                          # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                              # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                              # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                           # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                        # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                     # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "GPMVIC02"                    # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button         # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the approval product recomendation page     # steps.product_recomendation.ApprovalProductRecomendationSteps.iAmOnTheApprovalProductRecomendationPage()
+  Then I should see the approval product recomendation page # steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheApprovalProductRecomendationPage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the list of approval product recomendation" classname="Approval Product Recomendation" time="30.483">
+    <error message="timeout: Timed out receiving message from renderer: 29.945&#10;  (Session info: chrome=130.0.6723.91)&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [95ba6363eaae7914d3c104b7aff25699, get {url=https://dev.ifocusng.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.2:4444/sessio..., se:cdpVersion: 130.0.6723.91, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 95ba6363eaae7914d3c104b7aff25699" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 29.945
+  (Session info: chrome=130.0.6723.91)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [95ba6363eaae7914d3c104b7aff25699, get {url=https://dev.ifocusng.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.2:4444/sessio..., se:cdpVersion: 130.0.6723.91, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95ba6363eaae7914d3c104b7aff25699
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at steps.auth.LoginSteps.iAmOnTheLoginPage(LoginSteps.java:37)
+	at ✽.I am on the ifocus page(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:5)
+]]></error>
+    <system-out><![CDATA[
+@ApprovalProductRecomendation
+Scenario: I can see the list of approval product recomendation          # src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:21
+  Given I am on the ifocus page                                         # steps.auth.LoginSteps.iAmOnTheLoginPage()
+      org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.945
+  (Session info: chrome=130.0.6723.91)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [95ba6363eaae7914d3c104b7aff25699, get {url=https://dev.ifocusng.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.2:4444/sessio..., se:cdpVersion: 130.0.6723.91, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95ba6363eaae7914d3c104b7aff25699
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at steps.auth.LoginSteps.iAmOnTheLoginPage(LoginSteps.java:37)
+	at âœ½.I am on the ifocus page(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:5)
+
+  Then I should see the login page                                      # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                          # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                          # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                       # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                    # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "GPMVIC02"                                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                     # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the approval product recomendation page                 # steps.product_recomendation.ApprovalProductRecomendationSteps.iAmOnTheApprovalProductRecomendationPage()
+  Then I should see the approval product recomendation page             # steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheApprovalProductRecomendationPage()
+  When I click the search button of approval product recomendation page # steps.product_recomendation.ApprovalProductRecomendationSteps.iClickTheSearchButtonOfApprovalProductRecomendationPage()
+  Then I should see the list of approval product recomendation          # steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheListOfApprovalProductRecomendation()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the modal of approval product recomendation" classname="Approval Product Recomendation" time="9.613">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheModalOfApprovalProductRecomendation(ApprovalProductRecomendationSteps.java:94)
+	at ✽.I should see the modal of approval product recomendation(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:32)
+]]></failure>
+    <system-out><![CDATA[
+@ApprovalProductRecomendation
+Scenario: I can see the modal of approval product recomendation         # src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:27
+  Given I am on the ifocus page                                         # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                      # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                          # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                          # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                       # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                    # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "GPMVIC02"                                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                     # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the approval product recomendation page                 # steps.product_recomendation.ApprovalProductRecomendationSteps.iAmOnTheApprovalProductRecomendationPage()
+  Then I should see the approval product recomendation page             # steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheApprovalProductRecomendationPage()
+  When I click the search button of approval product recomendation page # steps.product_recomendation.ApprovalProductRecomendationSteps.iClickTheSearchButtonOfApprovalProductRecomendationPage()
+  And I click one of the list of approval product recomendation         # steps.product_recomendation.ApprovalProductRecomendationSteps.iClickOneOfTheListOfApprovalProductRecomendation()
+  Then I should see the modal of approval product recomendation         # steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheModalOfApprovalProductRecomendation()
+      org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheModalOfApprovalProductRecomendation(ApprovalProductRecomendationSteps.java:94)
+	at âœ½.I should see the modal of approval product recomendation(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:32)
+
+]]></system-out>
+  </testcase>
+  <testcase name="I can approve the product recomendation" classname="Approval Product Recomendation" time="10.527">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheModalOfApprovalProductRecomendation(ApprovalProductRecomendationSteps.java:94)
+	at ✽.I should see the modal of approval product recomendation(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:39)
+]]></failure>
+    <system-out><![CDATA[
+@ApprovalProductRecomendation
+Scenario: I can approve the product recomendation                       # src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:34
+  Given I am on the ifocus page                                         # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                      # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                          # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                          # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                       # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                    # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "GPMVIC02"                                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                     # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the approval product recomendation page                 # steps.product_recomendation.ApprovalProductRecomendationSteps.iAmOnTheApprovalProductRecomendationPage()
+  Then I should see the approval product recomendation page             # steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheApprovalProductRecomendationPage()
+  When I click the search button of approval product recomendation page # steps.product_recomendation.ApprovalProductRecomendationSteps.iClickTheSearchButtonOfApprovalProductRecomendationPage()
+  And I click one of the list of approval product recomendation         # steps.product_recomendation.ApprovalProductRecomendationSteps.iClickOneOfTheListOfApprovalProductRecomendation()
+  Then I should see the modal of approval product recomendation         # steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheModalOfApprovalProductRecomendation()
+      org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheModalOfApprovalProductRecomendation(ApprovalProductRecomendationSteps.java:94)
+	at âœ½.I should see the modal of approval product recomendation(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:39)
+
+  When I click the approve button of approval product recomendation     # steps.product_recomendation.ApprovalProductRecomendationSteps.iClickTheApproveButtonOfApprovalProductRecomendation()
+  And I click the yes button of approval product recomendation          # steps.product_recomendation.ApprovalProductRecomendationSteps.iClickTheYesButtonOfApprovalProductRecomendation()
+  Then I should see the approval product recomendation success message  # steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheApprovalProductRecomendationSuccessMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the product recomendation page" classname="Product Recomendation" time="10.018">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can see the product recomendation page        # src/test/resources/features/product_recomendation/ProductRecomendation.feature:17
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                   # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page            # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  Then I should see the product recomendation page        # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheProductRecomendationPage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see the list of product recomendation" classname="Product Recomendation" time="12.66">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can see the list of product recomendation     # src/test/resources/features/product_recomendation/ProductRecomendation.feature:21
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                   # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page            # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  Then I should see the product recomendation page        # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheProductRecomendationPage()
+  When I click the search button of product recomendation # steps.product_recomendation.ProductRecomendationSteps.iClickTheSearchButtonOfProductRecomendation()
+  Then I should see the list of product recomendation     # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendation()
+]]></system-out>
+  </testcase>
+  <testcase name="I can filter all progress" classname="Product Recomendation" time="12.508">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can filter all progress                                                         # src/test/resources/features/product_recomendation/ProductRecomendation.feature:27
+  Given I am on the ifocus page                                                             # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                          # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                              # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                              # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                           # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                                        # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                                     # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                                     # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                                         # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                                              # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  Then I should see the list of product recomendation                                       # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendation()
+  When I click the filter "progress" button with "All" value                                # steps.product_recomendation.ProductRecomendationSteps.iClickTheFilterButton(java.lang.String,java.lang.String)
+  And I click the search button of product recomendation                                    # steps.product_recomendation.ProductRecomendationSteps.iClickTheSearchButtonOfProductRecomendation()
+  Then I should see the list of product recomendation with "progress" filter of "All" value # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="I can filter upcoming progress" classname="Product Recomendation" time="13.17">
+    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(ProductRecomendationSteps.java:123)
+	at ✽.I should see the list of product recomendation with "progress" filter of "Upcoming" value(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ProductRecomendation.feature:39)
+]]></failure>
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can filter upcoming progress                                                         # src/test/resources/features/product_recomendation/ProductRecomendation.feature:34
+  Given I am on the ifocus page                                                                  # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                               # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                                   # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                                   # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                                # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                                             # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                                        # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                                          # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                                          # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                                              # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                                        # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                                                   # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  Then I should see the list of product recomendation                                            # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendation()
+  When I click the filter "progress" button with "Upcoming" value                                # steps.product_recomendation.ProductRecomendationSteps.iClickTheFilterButton(java.lang.String,java.lang.String)
+  And I click the search button of product recomendation                                         # steps.product_recomendation.ProductRecomendationSteps.iClickTheSearchButtonOfProductRecomendation()
+  Then I should see the list of product recomendation with "progress" filter of "Upcoming" value # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(java.lang.String,java.lang.String)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(ProductRecomendationSteps.java:123)
+	at âœ½.I should see the list of product recomendation with "progress" filter of "Upcoming" value(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ProductRecomendation.feature:39)
+
+]]></system-out>
+  </testcase>
+  <testcase name="I can filter finished progress" classname="Product Recomendation" time="12.575">
+    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(ProductRecomendationSteps.java:129)
+	at ✽.I should see the list of product recomendation with "progress" filter of "Finished" value(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ProductRecomendation.feature:46)
+]]></failure>
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can filter finished progress                                                         # src/test/resources/features/product_recomendation/ProductRecomendation.feature:41
+  Given I am on the ifocus page                                                                  # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                               # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                                   # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                                   # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                                # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                                             # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                                        # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                                          # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                                          # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                                              # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                                        # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                                                   # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  Then I should see the list of product recomendation                                            # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendation()
+  When I click the filter "progress" button with "Finished" value                                # steps.product_recomendation.ProductRecomendationSteps.iClickTheFilterButton(java.lang.String,java.lang.String)
+  And I click the search button of product recomendation                                         # steps.product_recomendation.ProductRecomendationSteps.iClickTheSearchButtonOfProductRecomendation()
+  Then I should see the list of product recomendation with "progress" filter of "Finished" value # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(java.lang.String,java.lang.String)
+      java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(ProductRecomendationSteps.java:129)
+	at âœ½.I should see the list of product recomendation with "progress" filter of "Finished" value(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ProductRecomendation.feature:46)
+
+]]></system-out>
+  </testcase>
+  <testcase name="I can reset the filter" classname="Product Recomendation" time="19.585">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can reset the filter                                  # src/test/resources/features/product_recomendation/ProductRecomendation.feature:48
+  Given I am on the ifocus page                                   # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                    # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                    # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                 # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                              # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                         # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                           # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                           # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button               # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message         # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                    # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  Then I should see the list of product recomendation             # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendation()
+  When I click the filter "progress" button with "Finished" value # steps.product_recomendation.ProductRecomendationSteps.iClickTheFilterButton(java.lang.String,java.lang.String)
+  And I click the reset filter button of product recomendation    # steps.product_recomendation.ProductRecomendationSteps.iClickTheResetFilterButtonOfProductRecomendation()
+  Then I should see the filter reset                              # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheFilterReset()
+]]></system-out>
+  </testcase>
+  <testcase name="I can delete the product recomendation" classname="Product Recomendation" time="45.501">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&apos;swal2-popup swal2-modal swal2-icon-warning swal2-show&apos;]&quot;}&#10;  (Session info: chrome=130.0.6723.91)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [5fce9f96ad9e80e65bc2ee0779e34f5c, findElement {using=css selector, value=div[class=&apos;swal2-popup swal2-modal swal2-icon-warning swal2-show&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.2:4444/sessio..., se:cdpVersion: 130.0.6723.91, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5fce9f96ad9e80e65bc2ee0779e34f5c" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div[class='swal2-popup swal2-modal swal2-icon-warning swal2-show']"}
+  (Session info: chrome=130.0.6723.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5fce9f96ad9e80e65bc2ee0779e34f5c, findElement {using=css selector, value=div[class='swal2-popup swal2-modal swal2-icon-warning swal2-show']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.2:4444/sessio..., se:cdpVersion: 130.0.6723.91, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fce9f96ad9e80e65bc2ee0779e34f5c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at steps.product_recomendation.ProductRecomendationSteps.iSeeTheProductRecomendationDeleted(ProductRecomendationSteps.java:164)
+	at ✽.I see the product recomendation deleted(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ProductRecomendation.feature:62)
+]]></error>
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can delete the product recomendation                                            # src/test/resources/features/product_recomendation/ProductRecomendation.feature:55
+  Given I am on the ifocus page                                                             # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                          # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                              # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                              # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                           # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                                        # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                                     # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                                     # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                                         # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                                              # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  Then I should see the list of product recomendation                                       # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendation()
+  When I click the filter "progress" button with "All" value                                # steps.product_recomendation.ProductRecomendationSteps.iClickTheFilterButton(java.lang.String,java.lang.String)
+  And I click the search button of product recomendation                                    # steps.product_recomendation.ProductRecomendationSteps.iClickTheSearchButtonOfProductRecomendation()
+  Then I should see the list of product recomendation with "progress" filter of "All" value # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(java.lang.String,java.lang.String)
+  When I delete a product recomendation                                                     # steps.product_recomendation.ProductRecomendationSteps.iDeleteAProductRecomendation()
+  Then I see the product recomendation deleted                                              # steps.product_recomendation.ProductRecomendationSteps.iSeeTheProductRecomendationDeleted()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class='swal2-popup swal2-modal swal2-icon-warning swal2-show']"}
+  (Session info: chrome=130.0.6723.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5fce9f96ad9e80e65bc2ee0779e34f5c, findElement {using=css selector, value=div[class='swal2-popup swal2-modal swal2-icon-warning swal2-show']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.2:4444/sessio..., se:cdpVersion: 130.0.6723.91, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fce9f96ad9e80e65bc2ee0779e34f5c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at steps.product_recomendation.ProductRecomendationSteps.iSeeTheProductRecomendationDeleted(ProductRecomendationSteps.java:164)
+	at âœ½.I see the product recomendation deleted(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ProductRecomendation.feature:62)
+
+]]></system-out>
+  </testcase>
+  <testcase name="I can go to the add product recomendation page" classname="Product Recomendation" time="7.468">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can go to the add product recomendation page  # src/test/resources/features/product_recomendation/ProductRecomendation.feature:64
+  Given I am on the ifocus page                           # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                        # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                            # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                            # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                         # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                      # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                   # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                   # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button       # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page            # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  When I click the add new product recomendation button   # steps.product_recomendation.ProductRecomendationSteps.iClickTheAddNewButton()
+  Then I should see the create product recomendation page # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheCreateProductRecomendationPage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see error message when add new product recomendation without input the required field" classname="Product Recomendation" time="8.019">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can see error message when add new product recomendation without input the required field # src/test/resources/features/product_recomendation/ProductRecomendation.feature:69
+  Given I am on the ifocus page                                                                       # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                                    # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                                        # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                                        # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                                     # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                                                  # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                                             # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                                               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                                               # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                                                   # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                                             # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                                                        # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  When I click the add new product recomendation button                                               # steps.product_recomendation.ProductRecomendationSteps.iClickTheAddNewButton()
+  Then I should see the create product recomendation page                                             # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheCreateProductRecomendationPage()
+  When I submit the add new product recomendation form                                                # steps.product_recomendation.ProductRecomendationSteps.iSubmitTheAddNewProductRecomendationForm()
+  Then I should see the input error message                                                           # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheErrorMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can see error message when add new product recomendation with past date" classname="Product Recomendation" time="21.061">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can see error message when add new product recomendation with past date # src/test/resources/features/product_recomendation/ProductRecomendation.feature:76
+  Given I am on the ifocus page                                                     # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                                  # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                      # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                      # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                                   # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                                # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                           # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                             # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                             # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                                 # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                           # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                                      # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  When I click the add new product recomendation button                             # steps.product_recomendation.ProductRecomendationSteps.iClickTheAddNewButton()
+  Then I should see the create product recomendation page                           # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheCreateProductRecomendationPage()
+  When I input valid specialist value of "Drg"                                      # steps.product_recomendation.ProductRecomendationSteps.iInputValidSpecialistValue(java.lang.String)
+  And I input valid area                                                            # steps.product_recomendation.ProductRecomendationSteps.iInputValidArea()
+  And I input valid product value                                                   # steps.product_recomendation.ProductRecomendationSteps.iInputValidProductValue()
+  And I input valid period value of "2024-01-01" to "2024-01-12"                    # steps.product_recomendation.ProductRecomendationSteps.iInputValidPeriodValue(java.lang.String,java.lang.String)
+  Then I should see the input error message                                         # steps.call_recomendation.CallRecomendationSteps.iShouldSeeTheErrorMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can create new product recomendation" classname="Product Recomendation" time="22.919">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can create new product recomendation                                # src/test/resources/features/product_recomendation/ProductRecomendation.feature:86
+  Given I am on the ifocus page                                                 # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                              # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                  # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                  # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                               # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                            # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                       # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                         # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                         # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                             # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                       # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                                  # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  When I click the add new product recomendation button                         # steps.product_recomendation.ProductRecomendationSteps.iClickTheAddNewButton()
+  Then I should see the create product recomendation page                       # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheCreateProductRecomendationPage()
+  When I input valid specialist value of "Drg"                                  # steps.product_recomendation.ProductRecomendationSteps.iInputValidSpecialistValue(java.lang.String)
+  And I input valid area                                                        # steps.product_recomendation.ProductRecomendationSteps.iInputValidArea()
+  And I input valid product value                                               # steps.product_recomendation.ProductRecomendationSteps.iInputValidProductValue()
+  And I input valid period value of "2025-01-01" to "2025-01-12"                # steps.product_recomendation.ProductRecomendationSteps.iInputValidPeriodValue(java.lang.String,java.lang.String)
+  Then I should see confirmation modal of product recomendation                 # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeConfirmationModalOfProductRecomendation()
+  And I click the confirm button of confirmation modal of product recomendation # steps.product_recomendation.ProductRecomendationSteps.iClickTheConfirmButtonOfConfirmationModalOfProductRecomendation()
+Campaign created successfully
+  Then I should see the success message                                         # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheSuccessMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can not input a long note on add new product recomendation" classname="Product Recomendation" time="13.304">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can not input a long note on add new product recomendation # src/test/resources/features/product_recomendation/ProductRecomendation.feature:98
+  Given I am on the ifocus page                                        # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                     # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                         # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                         # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                      # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                   # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                              # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                    # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message              # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                         # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  When I click the add new product recomendation button                # steps.product_recomendation.ProductRecomendationSteps.iClickTheAddNewButton()
+  Then I should see the create product recomendation page              # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheCreateProductRecomendationPage()
+  When I input a long note                                             # steps.product_recomendation.ProductRecomendationSteps.iInputALongNote()
+  Then I should see the note error message                             # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheNoteErrorMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can add new product recomendation without select line base" classname="Product Recomendation" time="23.629">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can add new product recomendation without select line base          # src/test/resources/features/product_recomendation/ProductRecomendation.feature:105
+  Given I am on the ifocus page                                                 # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                              # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                                  # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                                  # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                               # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                            # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                                       # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                         # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                         # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                             # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message                       # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the product recomendation page                                  # steps.product_recomendation.ProductRecomendationSteps.iAmOnTheProductRecomendationPage()
+  When I click the add new product recomendation button                         # steps.product_recomendation.ProductRecomendationSteps.iClickTheAddNewButton()
+  Then I should see the create product recomendation page                       # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheCreateProductRecomendationPage()
+  When I input valid specialist value of "Drg"                                  # steps.product_recomendation.ProductRecomendationSteps.iInputValidSpecialistValue(java.lang.String)
+  And I input valid area                                                        # steps.product_recomendation.ProductRecomendationSteps.iInputValidArea()
+  And I input valid product value                                               # steps.product_recomendation.ProductRecomendationSteps.iInputValidProductValue()
+  And I input valid period value of "2025-01-01" to "2025-01-12"                # steps.product_recomendation.ProductRecomendationSteps.iInputValidPeriodValue(java.lang.String,java.lang.String)
+  Then I should see confirmation modal of product recomendation                 # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeConfirmationModalOfProductRecomendation()
+  And I click the confirm button of confirmation modal of product recomendation # steps.product_recomendation.ProductRecomendationSteps.iClickTheConfirmButtonOfConfirmationModalOfProductRecomendation()
+Campaign created successfully
+  Then I should see the success message                                         # steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheSuccessMessage()
+]]></system-out>
+  </testcase>
+  <testcase name="I can not see the approval product recomendation page" classname="Product Recomendation" time="9.949">
+    <system-out><![CDATA[
+@ProductRecomendation
+Scenario: I can not see the approval product recomendation page         # src/test/resources/features/product_recomendation/ProductRecomendation.feature:117
+  Given I am on the ifocus page                                         # steps.auth.LoginSteps.iAmOnTheLoginPage()
+  Then I should see the login page                                      # steps.auth.LoginSteps.iShouldSeeTheLoginPage()
+  When I input the credentials                                          # steps.auth.LoginSteps.iInputTheCredentials()
+  And I click the login button                                          # steps.auth.LoginSteps.iClickTheLoginButton()
+  Then I should see the dashboard                                       # steps.auth.LoginSteps.iShouldSeeTheDashboard()
+  When I am on the change rayon page                                    # steps.change_rayon.ChangeRayonSteps.iAmOnTheChangeRayonPage()
+  Then I should see the change rayon page                               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonPage()
+  And I should see the rayon code input                                 # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheRayonCodeInput()
+  When I input the rayon code "PMVIC01"                                 # steps.change_rayon.ChangeRayonSteps.iInputTheRayonCode(java.lang.String)
+  When I click the change rayon code session button                     # steps.change_rayon.ChangeRayonSteps.iClickTheChangeRayonCodeSessionButton()
+  Then I should see the change rayon code success message               # steps.change_rayon.ChangeRayonSteps.iShouldSeeTheChangeRayonCodeSuccessMessage()
+  Given I am on the approval product recomendation page                 # steps.product_recomendation.ApprovalProductRecomendationSteps.iAmOnTheApprovalProductRecomendationPage()
+  Then I click the search button of approval product recomendation page # steps.product_recomendation.ApprovalProductRecomendationSteps.iClickTheSearchButtonOfApprovalProductRecomendationPage()
+  Then I should see unauthenticated message                             # steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeUnauthenticatedMessage()
+]]></system-out>
+  </testcase>
+</testsuite>

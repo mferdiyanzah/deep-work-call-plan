@@ -1,0 +1,104 @@
+-------------------------------------------------------------------------------
+Test set: runners.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 50, Failures: 5, Errors: 2, Skipped: 0, Time elapsed: 854.8 s <<< FAILURE! -- in runners.RunCucumberTest
+Input Best Time.I can submit the leave with a long note -- Time elapsed: 23.34 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.input_best_time.InputBestTimeSteps.iCanSeeSuccessModal(InputBestTimeSteps.java:214)
+	at ✽.I can see success modal of "Doctor's leave successfully created"(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/input-best-time/InputBestTime.feature:124)
+
+Approval Product Recomendation.I can see the list of approval product recomendation -- Time elapsed: 30.48 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 29.945
+  (Session info: chrome=130.0.6723.91)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [95ba6363eaae7914d3c104b7aff25699, get {url=https://dev.ifocusng.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.2:4444/sessio..., se:cdpVersion: 130.0.6723.91, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95ba6363eaae7914d3c104b7aff25699
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at steps.auth.LoginSteps.iAmOnTheLoginPage(LoginSteps.java:37)
+	at ✽.I am on the ifocus page(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:5)
+
+Approval Product Recomendation.I can see the modal of approval product recomendation -- Time elapsed: 9.613 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheModalOfApprovalProductRecomendation(ApprovalProductRecomendationSteps.java:94)
+	at ✽.I should see the modal of approval product recomendation(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:32)
+
+Approval Product Recomendation.I can approve the product recomendation -- Time elapsed: 10.53 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:180)
+	at steps.product_recomendation.ApprovalProductRecomendationSteps.iShouldSeeTheModalOfApprovalProductRecomendation(ApprovalProductRecomendationSteps.java:94)
+	at ✽.I should see the modal of approval product recomendation(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ApprovalProductRecomendation.feature:39)
+
+Product Recomendation.I can filter upcoming progress -- Time elapsed: 13.17 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(ProductRecomendationSteps.java:123)
+	at ✽.I should see the list of product recomendation with "progress" filter of "Upcoming" value(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ProductRecomendation.feature:39)
+
+Product Recomendation.I can filter finished progress -- Time elapsed: 12.57 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.product_recomendation.ProductRecomendationSteps.iShouldSeeTheListOfProductRecomendationWithFilterOfValue(ProductRecomendationSteps.java:129)
+	at ✽.I should see the list of product recomendation with "progress" filter of "Finished" value(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ProductRecomendation.feature:46)
+
+Product Recomendation.I can delete the product recomendation -- Time elapsed: 45.50 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div[class='swal2-popup swal2-modal swal2-icon-warning swal2-show']"}
+  (Session info: chrome=130.0.6723.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5fce9f96ad9e80e65bc2ee0779e34f5c, findElement {using=css selector, value=div[class='swal2-popup swal2-modal swal2-icon-warning swal2-show']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.2:4444/sessio..., se:cdpVersion: 130.0.6723.91, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fce9f96ad9e80e65bc2ee0779e34f5c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at steps.product_recomendation.ProductRecomendationSteps.iSeeTheProductRecomendationDeleted(ProductRecomendationSteps.java:164)
+	at ✽.I see the product recomendation deleted(file:///D:/Course/QA/deep-work-call-plan/src/test/resources/features/product_recomendation/ProductRecomendation.feature:62)
+
